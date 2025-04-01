@@ -1,0 +1,159 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgb(255, 255, 255);
+  margin: 10px 0; /* adjust spacing as needed */
+}
+
+/* Import a Google Font (Roboto) */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* Apply a gray background and the Roboto font to the entire page */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #545454;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Fixed header for the logo */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: #545454;
+  padding: 10px 0;
+  z-index: 1001;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+
+/* Style the navigation bar */
+nav {
+  position: fixed;
+  top: 96px; /* roughly 1 inch from the top (1 inch ~ 96px) */
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #545454;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Style nav links */
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+/* Add a  margin so it doesn’t hide behind the fixed nav */
+main {
+  margin-top: 150px;
+  padding: 20px;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.modal-prev, .modal-next {
+  position: absolute;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  transform: translateY(-50%);
+}
+
+.modal-prev {
+  left: 10px;
+}
+
+.modal-next {
+  right: 10px;
+}

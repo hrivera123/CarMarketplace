@@ -1,0 +1,24 @@
+# Node modules
+node_modules/
+client/node_modules/
+
+# Build output (if you're using Create React App)
+client/build/
+
+# Environment files (keep secrets out of your repo)
+.env
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files (macOS, etc.)
+.DS_Store
+
+# Editor settings (optional; if you want to avoid local editor config conflicts)
+.vscode/
+
+# Other temporary or generated files
+tmp/
+temp/
